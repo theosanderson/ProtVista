@@ -413,11 +413,7 @@ var loadSources = function(opts, dataSources, loaders, delegates, fv) {
     fv.initLayout(opts);
     _.each(dataSources, function(source, index) {
         if (!_.contains(opts.exclusions, source.category)) {
-            var url = source.url + opts.uniprotacc;
-            url = source.useExtension === true ? url + '.json' : url;
-            var dataLoader = DataLoader.get(url);
-            loaders.push(dataLoader);
-            dataLoader.done(function (d) {
+            d = source.stuff
                 if (d instanceof Array) //Workaround to be removed
                     d = d[0];
                 // First promise to resolve will set global parameters
@@ -452,11 +448,7 @@ var loadSources = function(opts, dataSources, loaders, delegates, fv) {
                     fv.data = fv.data.concat(features);
                     fv.dispatcher.ready();
                 }
-            }).fail(function (e) {
-                console.log(e);
-            }).always(function () {
-                delegates[index].resolve();
-            });
+          
         } else {
             delegates[index].resolve();
         }
