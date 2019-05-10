@@ -39,7 +39,7 @@ var Category = function(name, data, catInfo, fv, container) {
 
     category.tracksContainer = category.categoryContainer.append('div')
         .attr('class', 'up_pftv_category-tracks')
-        .style('display','none');
+        .style('display','block');
 };
 
 Category.prototype.reset = function() {
@@ -83,7 +83,7 @@ var repaintVariantsInPosition = function (data, wildAAPosition, wildIndex) {
 Category.prototype.repaint = function(data) {
     var category = this;
     if (category.viewerType === Constants.getVisualizationTypes().basic) {
-        category.data = _.union(category.data, data);
+        //category.data = _.union(category.data, data);
     } else {
         _.each(category.data, function (wildAAPosition, wildIndex) {
             if ((data[wildIndex].variants.length !== 0) && (wildAAPosition.variants.length !== 0)) {

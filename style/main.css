@@ -45,7 +45,7 @@ svg {
 
 .up_pftv_container {
     position: relative;
-    width: 960px;
+    width: 908px;
     color:#557071 !important;
     font-family: 'Helvetica neue', Helvetica, Arial, sans-serif !important;
     font-size: 13px !important;
@@ -131,7 +131,7 @@ svg {
     position: relative;
     display: inline-block;
     vertical-align: bottom;
-    width: 760px;
+    width: 708px;
 }
 
 .up_pftv_category-viewer svg, .up_pftv_track svg, .up_pftv_aaviewer svg {
