@@ -232,14 +232,14 @@ var createButtons = function(fv, data, container) {
         .attr('class','up_pftv_buttons');
     buttons.append('a')
         .attr('class','up_pftv_icon-button up_pftv_icon-download')
-        .attr('title','Download data')
+        .attr('title','Information and acknowledgements')
         .attr('href','#')
         .on('click', function(){
             DownloadDialog.displayDialog(fv, buttons);
         });
     buttons.append('a')
         .attr('class','up_pftv_icon-button up_pftv_icon-location')
-        .attr('title','Highlight region')
+        .attr('title','Settings')
         .attr('href','#')
         .on('click', function(){
             HighlightRegionDialog.displayDialog(fv, buttons);

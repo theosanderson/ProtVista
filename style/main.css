@@ -35,8 +35,8 @@ svg {
 
 .up_pftv_category-container {
     position: relative;
-    border-right: 2px solid #b2f5ff;
-    border-top: 1px solid #b2f5ff;
+    border-right: 2px solid #d5d5d5;
+    border-top: 1px solid #d5d5d5;
 }
 
 .up_pftv_category-container svg {
@@ -46,8 +46,8 @@ svg {
 .up_pftv_container {
     position: relative;
     width: 908px;
-    color:#557071 !important;
-    font-family: 'Helvetica neue', Helvetica, Arial, sans-serif !important;
+    color:black !important;
+    /*font-family: 'Helvetica neue', Helvetica, Arial, sans-serif !important;*/
     font-size: 13px !important;
     line-height: 1.5 !important;
 }
@@ -95,13 +95,13 @@ svg {
 /*Category and type tracks*/
 .up_pftv_category {
     margin-bottom: .1em;
-    border-bottom: .1em solid #b2f5ff;
+    border-bottom: .1em solid #d5d5d5;
 }
 
 .up_pftv_category-name, .up_pftv_track-header {
     font-weight: 400;
     line-height: 2.1em;
-    display: inline-block;
+    display: none;
     width: 180px;
     vertical-align: bottom;
     padding: .485em;
@@ -112,7 +112,7 @@ svg {
 }
 
 .up_pftv_category-name {
-    background-color: #b2f5ff;
+    background-color: #d5d5d5;
 }
 
 .up_pftv_category a:hover {
@@ -122,7 +122,7 @@ svg {
 }
 
 .up_pftv_track-header {
-    background-color: #d9faff;
+    background-color: #f0f0f0;
     /*line-height: 1.6em;
     margin: .05em 0;*/
 }
@@ -133,6 +133,9 @@ svg {
     vertical-align: bottom;
     width: 708px;
 }
+
+.up_pftv_category-viewer{
+display:none;}
 
 .up_pftv_category-viewer svg, .up_pftv_track svg, .up_pftv_aaviewer svg {
     vertical-align: bottom;
@@ -149,7 +152,7 @@ svg {
 }
 
 .up_pftv_track {
-    border-top: 1px #b2f5ff solid;
+    border-top: 1px #d5d5d5 solid;
 }
 
 .up_pftv_category-name.up_pftv_arrow-right:before {
@@ -761,11 +764,11 @@ a.up_pftv_icon-button:hover {
 }
 
 .up_pftv_icon-download {
-  background: url(../SVG/download.svg);
+  background: url(../SVG/info.svg);
 }
 
 .up_pftv_icon-location {
-  background: url(../SVG/location.svg);
+  background: url(../SVG/settings.svg);
 }
 
 .up_pftv_icon-zoom-in {
@@ -778,6 +781,7 @@ a.up_pftv_icon-button:hover {
 
 .up_pftv_icon-reset {
     background: url(../SVG/reset.svg);
+display:none;
 }
 
 .up_pftv_icon-info {
