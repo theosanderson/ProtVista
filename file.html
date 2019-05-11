@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="ProtVista : A BioJS viewer for protein sequence features">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/up_pftv.css">
+
+    <title>UniProt Protein Feature Viewer, a BioJS component</title>
+    <script src="./build/protvista.js"></script>
+    <link href="./build/css/main.css" rel="stylesheet"/>
+    <script>
+        var loadData = function () {
+            
+            var app = require("ProtVista");
+            var instance = new app({
+       el: document.getElementById("basicDemo"),
+
+       //This will be **always** added at the end of your data source URL but before the extension
+       uniprotacc: 'P05067',
+
+       //Default sources will be included (even if this option is omitted)
+       defaultSources: false,
+
+       //Your data sources are defined here
+       customDataSource: {
+         url: './data/externalFeatures_',
+         source: 'myLab',
+         useExtension: true,
+         stuff:{
+  "sequence": "MLPGLALLLLAAWTARALEVPTDGNAGLLAEPQIAMFCGRLNMHMNVQNGKWDS",
+  "features": [{
+    "type": "MY_TRANSMEM",
+    "category": "TOPOLOGY",
+    "begin": "0",
+    "end": "5"
+  }],
+}
+       }
+    });
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a href="."><h1 id="project_title">ProtVista</h1></a>
+        <h2 id="project_tagline">A BioJS viewer for protein sequence features</h2>
+
+        <section id="links">
+            <a class="up_links" id="forkme_banner"
+               href="https://github.com/ebi-uniprot/ProtVista">View on GitHub</a>
+            <a class="up_links" href="./developerGuide.html">Developer Guide</a>
+            <a class="up_links" href="./userGuide.html">User Guide</a>
+        </section>
+    </header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <div>
+  <p>
+    ProtVista is a BioJS web-based widget that lays out, maps, orients, and renders position-based annotations for
+    sequences. The result is a powerful visualization tool that can be easily integrated into web applications.
+  </p>
+  
+  <p>
+    How to cite us: <strong>ProtVista: visualization of protein sequence annotations</strong> 
+    (doi: <a href="https://doi.org/10.1093/bioinformatics/btx120" target="_blank">10.1093/bioinformatics/btx120</a>)
+  </p>
+
+  <div id="basicDemo" style="margin-top: 10px"></div>
+  <div style="visibility: hidden">
+    <img src="./images/icon_download.png" onload="loadData(
+      'basicDemo', {uniprotacc: 'P05067'}
+    );">
+  </div>
+</div>
+<script>
+loadData();
+</script>
+
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p class="copyright">ProtVista is maintained by the
+            <a href="https://github.com/ebi-uniprot">Protein Function Development team</a> at
+            <a href="http://www.ebi.ac.uk" target="_blank">EMBL-EBI</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
+
