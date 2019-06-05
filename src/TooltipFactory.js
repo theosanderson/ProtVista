@@ -160,8 +160,7 @@ var Tooltip = function(fv, catTitle, d, container, coordinates) {
 
     var descRow = tooltip.table.append('tr');
 
-    var tooltipTitle = tooltip.data.type + ' ' + tooltip.data.begin +
-        (tooltip.data.end && (tooltip.data.end !== tooltip.data.begin) ? '-' + tooltip.data.end : '');
+    var tooltipTitle = tooltip.data.type;
     descRow.append('th').attr('colspan', 2).text(tooltipTitle);
 
     var keys = tooltip.data.externalData ? _.keys(tooltip.data.externalData).join(', ') : undefined;
@@ -277,7 +276,6 @@ Tooltip.prototype.addBlast = function() {
 var BasicTooltipViewer = function(tooltip) {
     tooltip.addEvidences(tooltip.data.evidences);
     addXRefs(tooltip, tooltip.data.xrefs);
-    tooltip.addBlast();
 };
 
 var AntigenTooltipViewer = function(tooltip) {
@@ -291,7 +289,6 @@ var AntigenTooltipViewer = function(tooltip) {
     }
     tooltip.addEvidences(tooltip.data.evidences);
     addXRefs(tooltip, tooltip.data.xrefs);
-    tooltip.addBlast();
 };
 
 var AlternativeTooltipViewer = function(tooltip, change, field) {
@@ -308,7 +305,6 @@ var AlternativeTooltipViewer = function(tooltip, change, field) {
     }
     tooltip.addEvidences(tooltip.data.evidences);
     addXRefs(tooltip, tooltip.data.xrefs);
-    tooltip.addBlast();
 };
 
 var addPredictions = function(tooltip, data) {
