@@ -56,6 +56,18 @@ How to cite us: **ProtVista: visualization of protein sequence annotations** (do
 ## Documentation
 [Developer documentation](http://ebi-uniprot.github.io/ProtVista/developerGuide.html)
 
+To rebuild the node package locally:
+
+```
+# Install gulp
+sudo npm install gulp-cli -g
+npm install gulp -D
+
+# Rebuild the package
+npm i
+npm run build
+```
+
 ## Contributing
 Please submit all issues and pull requests to the [ebi-uniprot/ProtVista](http://github.com/ebi-uniprot/ProtVista) repository!
 
