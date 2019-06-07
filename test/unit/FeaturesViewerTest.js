@@ -138,7 +138,7 @@ describe('FeaturesViewerTest', function() {
             assert.notEqual(Constants.getTrackNames().unique.label, label);
             expect(Constants.getTrackNames().unique).to.deep.equal(tracksToAdd.unique);
             expect(Constants.getTrackNames().mixed).to.deep.equal(tracksToAdd.mixed);
-            expect(Constants.getTrackNames().only_unique).to.deep.equal(tracksToAdd.only_Unique);
+            expect(Constants.getTrackNames().only_Unique).to.deep.equal(tracksToAdd.only_Unique);
         });
         it('should get existing track info', function() {
             var unique = {label:'Unique peptide whose track already exist',tooltip:''};

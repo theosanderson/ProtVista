@@ -135,12 +135,11 @@ var Constants = function() {
     },
     addTrackTypes: function(tracksToAdd) {
         _.each(tracksToAdd, function(elem, key) {
-            key = key.toLowerCase();
             allTrackNames[key] = elem;
         });
     },
     getTrackInfo: function(trackName) {
-        var name = trackName.toLowerCase();
+        var name = trackName;
         return this.getTrackNames()[name] ? this.getTrackNames()[name]
             : {label: Constants.convertNameToLabel(name), tooltip:''};
     }

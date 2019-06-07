@@ -161,7 +161,7 @@ var Tooltip = function(fv, catTitle, d, container, coordinates) {
     var descRow = tooltip.table.append('tr');
 
     var tooltipTitle = tooltip.data.type;
-    descRow.append('th').attr('colspan', 2).text(tooltipTitle);
+    descRow.append('th').attr('colspan', 2).html(tooltipTitle);
 
     var keys = tooltip.data.externalData ? _.keys(tooltip.data.externalData).join(', ') : undefined;
     if (keys || (tooltip.data.sourceType !== undefined)) {
@@ -255,7 +255,7 @@ Tooltip.prototype.addEvidences = function(evidences) {
 Tooltip.prototype.addBlast = function() {
     var tooltip = this;
     var end = tooltip.data.end ? tooltip.data.end : tooltip.data.begin;
-    var type = tooltip.data.type.toLowerCase();
+    var type = tooltip.data.type;
     if (((end - tooltip.data.begin) >= 3) && (!_.contains(Constants.getNoBlastTypes(), type))) {
         var blast = tooltip.table.append('tr');
         blast.append('td').text('Tools');

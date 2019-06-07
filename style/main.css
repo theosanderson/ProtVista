@@ -121,7 +121,7 @@ svg {
 }
 
 .up_pftv_track-header {
-    background-color: #f0f0f0;
+    background-color: #fff;
     /*line-height: 1.6em;
     margin: .05em 0;*/
 }
@@ -388,7 +388,6 @@ display:none;}
 }
 
 .up_pftv_tooltip-container table th {
-    text-transform: capitalize;
     font-weight: 400;
     white-space: nowrap;
     letter-spacing: .05em;
