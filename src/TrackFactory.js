@@ -45,7 +45,7 @@ var VariantTrackViewer = function(track) {
 
 Track.basic = function() {
     var self = this;
-    var trackInfo = Constants.getTrackInfo(self.type.toLowerCase());
+    var trackInfo = Constants.getTrackInfo(self.type);
     this.titleContainer.attr('class', 'up_pftv_track-header')
         .attr('title', trackInfo.label + '\n' +trackInfo.tooltip)
         .html(trackInfo.label);

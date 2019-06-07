@@ -255,7 +255,7 @@ Tooltip.prototype.addEvidences = function(evidences) {
 Tooltip.prototype.addBlast = function() {
     var tooltip = this;
     var end = tooltip.data.end ? tooltip.data.end : tooltip.data.begin;
-    var type = tooltip.data.type.toLowerCase();
+    var type = tooltip.data.type;
     if (((end - tooltip.data.begin) >= 3) && (!_.contains(Constants.getNoBlastTypes(), type))) {
         var blast = tooltip.table.append('tr');
         blast.append('td').text('Tools');
