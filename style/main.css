@@ -5,7 +5,7 @@ svg {
 .up_pftv_buttons {
     display: inline-block;
     padding: 0 .5em 0 .5em;
-    width: 180px;
+    width: 240px;
     text-align: right;
     vertical-align: bottom;
     position: relative;
@@ -14,7 +14,7 @@ svg {
 .up_pftv_credit_container {
   display: inline-block;
   vertical-align: top;
-  width: 180px;
+  width: 240px;
   padding: 0 0.5em;
 }
 
@@ -35,7 +35,6 @@ svg {
 
 .up_pftv_category-container {
     position: relative;
-    border-right: 2px solid #d5d5d5;
     border-top: 1px solid #d5d5d5;
 }
 
@@ -45,7 +44,7 @@ svg {
 
 .up_pftv_container {
     position: relative;
-    width: 908px;
+    width: 903px;
     color:black !important;
     /*font-family: 'Helvetica neue', Helvetica, Arial, sans-serif !important;*/
     font-size: 13px !important;
@@ -80,7 +79,7 @@ svg {
 }
 
 .up_pftv_navruler {
-    margin-left: 195px;
+    margin-left: 252px;
 }
 
 .up_pftv_navruler svg {
@@ -102,7 +101,7 @@ svg {
     font-weight: 400;
     line-height: 2.1em;
     display: none;
-    width: 180px;
+    width: 240px;
     vertical-align: bottom;
     padding: .485em;
     border: none;
@@ -131,7 +130,7 @@ svg {
     position: relative;
     display: inline-block;
     vertical-align: bottom;
-    width: 708px;
+    width: 648px;
 }
 
 .up_pftv_category-viewer{
@@ -152,7 +151,6 @@ display:none;}
 }
 
 .up_pftv_track {
-    border-top: 1px #d5d5d5 solid;
 }
 
 .up_pftv_category-name.up_pftv_arrow-right:before {
