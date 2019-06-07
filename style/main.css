@@ -35,7 +35,6 @@ svg {
 
 .up_pftv_category-container {
     position: relative;
-    border-right: 2px solid #d5d5d5;
     border-top: 1px solid #d5d5d5;
 }
 
@@ -152,7 +151,6 @@ display:none;}
 }
 
 .up_pftv_track {
-    border-top: 1px #d5d5d5 solid;
 }
 
 .up_pftv_category-name.up_pftv_arrow-right:before {
