@@ -161,7 +161,7 @@ var Tooltip = function(fv, catTitle, d, container, coordinates) {
     var descRow = tooltip.table.append('tr');
 
     var tooltipTitle = tooltip.data.type;
-    descRow.append('th').attr('colspan', 2).text(tooltipTitle);
+    descRow.append('th').attr('colspan', 2).html(tooltipTitle);
 
     var keys = tooltip.data.externalData ? _.keys(tooltip.data.externalData).join(', ') : undefined;
     if (keys || (tooltip.data.sourceType !== undefined)) {
