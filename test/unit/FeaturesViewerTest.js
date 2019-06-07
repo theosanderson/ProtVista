@@ -114,7 +114,7 @@ describe('FeaturesViewerTest', function() {
             expect(Constants.getCategoryNamesInOrder()).to.deep.equal(expectedCategoryNamesInOrder);
         });
         it('should get non-existing category info', function() {
-            var family_domains = {name: 'family_domains', label: 'Family domains', visualizationType: 'basic'};
+            var family_domains = {name: 'family_domains', label: 'family domains', visualizationType: 'basic'};
             expect(family_domains).to.deep.equal(Constants.getCategoryInfo('family_domains'));
         });
         it('should get existing category info', function() {
@@ -145,7 +145,7 @@ describe('FeaturesViewerTest', function() {
             expect(unique).to.deep.equal(Constants.getTrackInfo('unique'));
         });
         it('should get non-existing track info', function() {
-            var family_domains = {label:'Family domains', tooltip:''};
+            var family_domains = {label:'family domains', tooltip:''};
             expect(family_domains).to.deep.equal(Constants.getTrackInfo('family_domains'));
         });
     });
