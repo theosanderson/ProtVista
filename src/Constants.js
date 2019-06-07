@@ -102,7 +102,6 @@ var Constants = function() {
     },
     convertNameToLabel: function(name) {
         var label = name.replace(/_/g, ' ');
-        label = label.charAt(0).toUpperCase() + label.slice(1).toLowerCase();
         return label;
     },
     getCategoryInfo: function(categoryName) {
