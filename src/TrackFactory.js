@@ -47,7 +47,7 @@ Track.basic = function() {
     var self = this;
     var trackInfo = Constants.getTrackInfo(self.type.toLowerCase());
     this.titleContainer.attr('class', 'up_pftv_track-header')
-        .attr('title', trackInfo.label.toUpperCase() + '\n' +trackInfo.tooltip)
+        .attr('title', trackInfo.label + '\n' +trackInfo.tooltip)
         .html(trackInfo.label);
     this.trackViewer = new BasicTrackViewer(this);
 };
