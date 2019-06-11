@@ -460,7 +460,7 @@ var FeaturesViewer = function(opts) {
     fv.dispatcher = d3.dispatch("featureSelected", "featureDeselected", "ready", "noDataAvailable", "noDataRetrieved",
         "notFound", "notConfigRetrieved", "regionHighlighted");
 
-    fv.width = 648;
+    fv.width = 407;
     fv.maxZoomSize = 30;
     fv.selectedFeature = undefined;
     fv.selectedFeatureElement = undefined;
